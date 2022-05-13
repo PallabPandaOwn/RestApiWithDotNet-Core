@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Pallab.Panda\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Pallab.Panda\\.nuget\\packages"
+    ]
+  }
+}

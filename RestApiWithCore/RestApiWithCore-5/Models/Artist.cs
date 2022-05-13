@@ -1,5 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Http;
+using System.Collections.Generic;
+
 namespace RestApiWithCore_5.Models
 {
     public class Artist
@@ -12,7 +16,9 @@ namespace RestApiWithCore_5.Models
         public string Gender { get; set; }
         [Required(ErrorMessage = "Required,Value canot be empty")]
         public string ImageUrl { get; set; }
-
-
+        [NotMapped]
+        public IFormFile Image { get; set; }
+        public ICollection<Album> Albums { get; set; }
+        public ICollection<Song> Songs { get; set; }
     }
 }

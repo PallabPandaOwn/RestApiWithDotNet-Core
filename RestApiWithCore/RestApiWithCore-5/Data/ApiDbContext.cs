@@ -10,9 +10,12 @@ namespace RestApiWithCore_5.Data
 
         }
         public DbSet<Song> Songs { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        public DbSet<Album> Album { get; set; }
+        public DbSet<Artist> Artist { get; set; }
+
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //modelBuilder.Entity<Song>().HasData();
-        }
+        }*/
     }
 }
